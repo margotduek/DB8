@@ -16,6 +16,7 @@ defmodule Db8.Router do
   scope "/", Db8 do
     pipe_through :browser # Use the default browser stack
 
+    resources "/users", UserController
     get "/", PageController, :index
   end
 
