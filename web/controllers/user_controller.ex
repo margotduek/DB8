@@ -1,6 +1,5 @@
 defmodule Db8.UserController do
   use Db8.Web, :controller
-
   alias Db8.User
 
   plug :scrub_params, "user" when action in [:create, :update]
