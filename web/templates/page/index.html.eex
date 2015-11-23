@@ -62,17 +62,8 @@
   <p>¡Unete al moviemiento! <br>
   Cambia tu país y tu mundo defendiendo tus creencias</p>
   <div id="chartdiv"></div>
-  <br><br>
+  <br><br><br><br>
 </div>
-
-<div class="exports">
-  <button type="button" class="exportar" name="csv">CSV</button>
-  <button type="button" class="exportar" name="pdf">PDF</button>
-</div>
-
-
-
-
 
 
 

@@ -60,6 +60,7 @@
   <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
+<link href="http://amcharts.com/lib/3/plugins/export/export.css" rel="stylesheet" type="text/css">
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="../../assets/js/vendor/holder.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -74,9 +75,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.13.0/exporting/canvg.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.13.0/exporting/rgbcolor.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.13.0/exporting/filesaver.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.13.0/exporting/amexport.js" type="text/javascript">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.13.0/exporting/amexport.js" type="text/javascript"></script>
+<script src="http://amcharts.com/lib/3/plugins/export/export.js" type="text/javascript"></script>
 
-</script>
 
 </script>
 <script type="text/javascript">
