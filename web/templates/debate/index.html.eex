@@ -1,0 +1,34 @@
+<h2>Listing debates</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Propteam</th>
+      <th>Oppteam</th>
+      <th>Propscore</th>
+      <th>Oppscore</th>
+      <th>Tournamentid</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for debate <- @debates do %>
+    <tr>
+      <td><%= debate.propteam %></td>
+      <td><%= debate.oppteam %></td>
+      <td><%= debate.propscore %></td>
+      <td><%= debate.oppscore %></td>
+      <td><%= debate.tournamentid %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: debate_path(@conn, :show, debate), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: debate_path(@conn, :edit, debate), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: debate_path(@conn, :delete, debate), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New debate", to: debate_path(@conn, :new) %>

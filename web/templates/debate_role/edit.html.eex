@@ -1,0 +1,6 @@
+<h2>Edit debate role</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: debate_role_path(@conn, :update, @debate_role) %>
+
+<%= link "Back", to: debate_role_path(@conn, :index) %>

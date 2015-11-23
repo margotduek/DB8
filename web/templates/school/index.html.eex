@@ -1,0 +1,30 @@
+<h2>Listing schools</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Phone</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for school <- @schools do %>
+    <tr>
+      <td><%= school.name %></td>
+      <td><%= school.address %></td>
+      <td><%= school.phone %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: school_path(@conn, :show, school), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: school_path(@conn, :edit, school), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: school_path(@conn, :delete, school), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New school", to: school_path(@conn, :new) %>

@@ -1,0 +1,30 @@
+<h2>Listing tournament teams</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tournamentid</th>
+      <th>Affiliaffiliationschoolid</th>
+      <th>Teamid</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for tournament_team <- @tournament_teams do %>
+    <tr>
+      <td><%= tournament_team.tournamentid %></td>
+      <td><%= tournament_team.affiliaffiliationschoolid %></td>
+      <td><%= tournament_team.teamid %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: tournament_team_path(@conn, :show, tournament_team), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: tournament_team_path(@conn, :edit, tournament_team), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: tournament_team_path(@conn, :delete, tournament_team), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New tournament team", to: tournament_team_path(@conn, :new) %>

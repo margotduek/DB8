@@ -1,0 +1,23 @@
+<h2>Show school</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @school.name %>
+  </li>
+
+  <li>
+    <strong>Address:</strong>
+    <%= @school.address %>
+  </li>
+
+  <li>
+    <strong>Phone:</strong>
+    <%= @school.phone %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: school_path(@conn, :edit, @school) %>
+<%= link "Back", to: school_path(@conn, :index) %>

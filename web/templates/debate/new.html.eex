@@ -1,0 +1,6 @@
+<h2>New debate</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: debate_path(@conn, :create) %>
+
+<%= link "Back", to: debate_path(@conn, :index) %>

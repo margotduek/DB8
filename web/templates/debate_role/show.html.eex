@@ -1,0 +1,13 @@
+<h2>Show debate role</h2>
+
+<ul>
+
+  <li>
+    <strong>Role:</strong>
+    <%= @debate_role.role %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: debate_role_path(@conn, :edit, @debate_role) %>
+<%= link "Back", to: debate_role_path(@conn, :index) %>

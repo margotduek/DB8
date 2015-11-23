@@ -35,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :db8, Db8.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "margotduek",
-  password: "eemcdpsql1234",
-  database: "db8_dev",
-  hostname: "localhost",
+  username: "qtaxmofs",
+  password: "yxXmiFjPR89pthM0tOijncHSuXfnUEiv",
+  database: "qtaxmofs",
+  hostname: "jumbo.db.elephantsql.com",
   pool_size: 10

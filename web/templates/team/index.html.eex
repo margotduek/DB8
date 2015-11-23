@@ -1,0 +1,34 @@
+<h2>Listing team</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Affiliationschoolid</th>
+      <th>Firstmember</th>
+      <th>Secondmember</th>
+      <th>Thirdmember</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for team <- @team do %>
+    <tr>
+      <td><%= team.name %></td>
+      <td><%= team.affiliationschoolid %></td>
+      <td><%= team.firstmember %></td>
+      <td><%= team.secondmember %></td>
+      <td><%= team.thirdmember %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: team_path(@conn, :show, team), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: team_path(@conn, :edit, team), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: team_path(@conn, :delete, team), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New team", to: team_path(@conn, :new) %>
