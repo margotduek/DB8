@@ -56,12 +56,23 @@
 </div>
 
 
-<div class="pie"></div>
 
-<div class="jumbotron">
-  <h2>Bienvenidos a DB8'rs</h2>
-  <p class="lead">El lugar pefecto para debatir</p>
+<div class="chart">
+  <h2>Cada día somos más DB8'rs</h2>
+  <p>¡Unete al moviemiento! <br>
+  Cambia tu país y tu mundo defendiendo tus creencias</p>
+  <div id="chartdiv"></div>
+  <br><br>
 </div>
+
+<div class="exports">
+  <button type="button" class="exportar" name="csv">CSV</button>
+  <button type="button" class="exportar" name="pdf">PDF</button>
+</div>
+
+
+
+
 
 
 
