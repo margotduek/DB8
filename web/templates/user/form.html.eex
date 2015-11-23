@@ -31,16 +31,6 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :school, "School", class: "control-label" %>
-    <%= text_input f, :school, class: "form-control" %>
-  </div>
-
-  <div class="form-group">
-    <%= label f, :points, "Points", class: "control-label" %>
-    <%= number_input f, :points, class: "form-control" %>
-  </div>
-
-  <div class="form-group">
     <%= submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>
