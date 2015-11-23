@@ -3,11 +3,9 @@ defmodule Db8.User do
 
   schema "users" do
     field :name, :string
-    field :school, :string
     field :username, :string
     field :password, :string, virtual: true
     field :password_hash, :string
-    field :points, :integer
 
     timestamps
   end
