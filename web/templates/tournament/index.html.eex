@@ -1,0 +1,30 @@
+<h2>Listing tournaments</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Host</th>
+      <th>Admin</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for tournament <- @tournaments do %>
+    <tr>
+      <td><%= tournament.name %></td>
+      <td><%= tournament.host %></td>
+      <td><%= tournament.admin %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: tournament_path(@conn, :show, tournament), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: tournament_path(@conn, :edit, tournament), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: tournament_path(@conn, :delete, tournament), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New tournament", to: tournament_path(@conn, :new) %>

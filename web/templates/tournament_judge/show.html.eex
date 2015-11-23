@@ -1,0 +1,23 @@
+<h2>Show tournament judge</h2>
+
+<ul>
+
+  <li>
+    <strong>Tournamentid:</strong>
+    <%= @tournament_judge.tournamentId %>
+  </li>
+
+  <li>
+    <strong>Affiliaffiliationschoolid:</strong>
+    <%= @tournament_judge.affiliaffiliationSchoolId %>
+  </li>
+
+  <li>
+    <strong>Userid:</strong>
+    <%= @tournament_judge.userId %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: tournament_judge_path(@conn, :edit, @tournament_judge) %>
+<%= link "Back", to: tournament_judge_path(@conn, :index) %>

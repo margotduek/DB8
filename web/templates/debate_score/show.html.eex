@@ -1,0 +1,38 @@
+<h2>Show debate score</h2>
+
+<ul>
+
+  <li>
+    <strong>Debater:</strong>
+    <%= @debate_score.debater %>
+  </li>
+
+  <li>
+    <strong>Debaterole:</strong>
+    <%= @debate_score.debateRole %>
+  </li>
+
+  <li>
+    <strong>Debate:</strong>
+    <%= @debate_score.debate %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @debate_score.content %>
+  </li>
+
+  <li>
+    <strong>Strategy:</strong>
+    <%= @debate_score.strategy %>
+  </li>
+
+  <li>
+    <strong>Style:</strong>
+    <%= @debate_score.style %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: debate_score_path(@conn, :edit, @debate_score) %>
+<%= link "Back", to: debate_score_path(@conn, :index) %>

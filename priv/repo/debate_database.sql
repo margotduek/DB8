@@ -22,6 +22,9 @@ CREATE TABLE team(
 );
 
 ALTER TABLE team
+ADD CONSTRAINT fk_affiliationSchoolId FOREIGN KEY (affiliationSchoolId) REFERENCES school(id);
+
+ALTER TABLE team
 ADD CONSTRAINT fk_firstMember FOREIGN KEY (firstMember) REFERENCES users(id);
 
 ALTER TABLE team

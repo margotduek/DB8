@@ -1,0 +1,33 @@
+<h2>Show debate</h2>
+
+<ul>
+
+  <li>
+    <strong>Propteam:</strong>
+    <%= @debate.propteam %>
+  </li>
+
+  <li>
+    <strong>Oppteam:</strong>
+    <%= @debate.oppteam %>
+  </li>
+
+  <li>
+    <strong>Propscore:</strong>
+    <%= @debate.propscore %>
+  </li>
+
+  <li>
+    <strong>Oppscore:</strong>
+    <%= @debate.oppscore %>
+  </li>
+
+  <li>
+    <strong>Tournamentid:</strong>
+    <%= @debate.tournamentid %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: debate_path(@conn, :edit, @debate) %>
+<%= link "Back", to: debate_path(@conn, :index) %>

@@ -1,0 +1,36 @@
+<h2>Listing debate scores</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Debater</th>
+      <th>Debaterole</th>
+      <th>Debate</th>
+      <th>Content</th>
+      <th>Strategy</th>
+      <th>Style</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for debate_score <- @debate_scores do %>
+    <tr>
+      <td><%= debate_score.debater %></td>
+      <td><%= debate_score.debateRole %></td>
+      <td><%= debate_score.debate %></td>
+      <td><%= debate_score.content %></td>
+      <td><%= debate_score.strategy %></td>
+      <td><%= debate_score.style %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: debate_score_path(@conn, :show, debate_score), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: debate_score_path(@conn, :edit, debate_score), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: debate_score_path(@conn, :delete, debate_score), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New debate score", to: debate_score_path(@conn, :new) %>

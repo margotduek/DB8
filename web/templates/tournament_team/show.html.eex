@@ -1,0 +1,23 @@
+<h2>Show tournament team</h2>
+
+<ul>
+
+  <li>
+    <strong>Tournamentid:</strong>
+    <%= @tournament_team.tournamentid %>
+  </li>
+
+  <li>
+    <strong>Affiliaffiliationschoolid:</strong>
+    <%= @tournament_team.affiliaffiliationschoolid %>
+  </li>
+
+  <li>
+    <strong>Teamid:</strong>
+    <%= @tournament_team.teamid %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: tournament_team_path(@conn, :edit, @tournament_team) %>
+<%= link "Back", to: tournament_team_path(@conn, :index) %>

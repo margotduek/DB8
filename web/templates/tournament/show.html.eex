@@ -1,0 +1,23 @@
+<h2>Show tournament</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @tournament.name %>
+  </li>
+
+  <li>
+    <strong>Host:</strong>
+    <%= @tournament.host %>
+  </li>
+
+  <li>
+    <strong>Admin:</strong>
+    <%= @tournament.admin %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: tournament_path(@conn, :edit, @tournament) %>
+<%= link "Back", to: tournament_path(@conn, :index) %>

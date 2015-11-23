@@ -1,0 +1,23 @@
+<h2>Show tournament coach</h2>
+
+<ul>
+
+  <li>
+    <strong>Tournamentid:</strong>
+    <%= @tournament_coach.tournamentid %>
+  </li>
+
+  <li>
+    <strong>Affiliaffiliationschoolid:</strong>
+    <%= @tournament_coach.affiliaffiliationschoolid %>
+  </li>
+
+  <li>
+    <strong>Userid:</strong>
+    <%= @tournament_coach.userid %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: tournament_coach_path(@conn, :edit, @tournament_coach) %>
+<%= link "Back", to: tournament_coach_path(@conn, :index) %>

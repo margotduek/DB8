@@ -1,0 +1,6 @@
+<h2>Edit tournament team</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: tournament_team_path(@conn, :update, @tournament_team) %>
+
+<%= link "Back", to: tournament_team_path(@conn, :index) %>

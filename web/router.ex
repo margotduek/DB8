@@ -17,6 +17,15 @@ defmodule Db8.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/schools", SchoolController
+    resources "/debate_role", DebateRoleController
+    resources "/teams", TeamController
+    resources "/tournaments", TournamentController
+    resources "/tournament_judges", TournamentJudgeController
+    resources "/tournament_coaches", TournamentCoachController
+    resources "/tournament_teams", TournamentTeamController
+    resources "/debates", DebateController
+    resources "/debate_scores", DebateScoreController
   end
 
   # Other scopes may use custom stacks.

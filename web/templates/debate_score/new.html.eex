@@ -1,0 +1,6 @@
+<h2>New debate score</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: debate_score_path(@conn, :create) %>
+
+<%= link "Back", to: debate_score_path(@conn, :index) %>

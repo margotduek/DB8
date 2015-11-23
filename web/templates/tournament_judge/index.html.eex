@@ -1,0 +1,30 @@
+<h2>Listing tournament judges</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tournamentid</th>
+      <th>Affiliaffiliationschoolid</th>
+      <th>Userid</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for tournament_judge <- @tournament_judges do %>
+    <tr>
+      <td><%= tournament_judge.tournamentId %></td>
+      <td><%= tournament_judge.affiliaffiliationSchoolId %></td>
+      <td><%= tournament_judge.userId %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: tournament_judge_path(@conn, :show, tournament_judge), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: tournament_judge_path(@conn, :edit, tournament_judge), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: tournament_judge_path(@conn, :delete, tournament_judge), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New tournament judge", to: tournament_judge_path(@conn, :new) %>
