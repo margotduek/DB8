@@ -20,6 +20,8 @@ defmodule Db8.Router do
     get "/", PageController, :index
     resources "/users", UserController
     resources "/sessions", SessionController, only: [:new, :create, :delete]
+    resources "/books", BookController
+
   end
 
   # Other scopes may use custom stacks.

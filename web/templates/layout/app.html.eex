@@ -9,32 +9,57 @@
 
     <title>DB8!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
-  <body>
-    <div class="container" role="main">
-      <div class="header">
-        <ol class="breadcrumb text-right">
+  <body class = "Syte">
+    <nav>
+      <div class="col-xs-6">
+        <div class="logo">
+          <br /><br>
+          DBTrs
+        </div>
+
+      </div>
+
+      <div class="col-xs-6 text-right">
+        <div id="header-links">
           <%= if @current_user do %>
             <li><%= @current_user.username %></li>
             <li>
-              <%= link "Log out", to: session_path(@conn, :delete, @current_user),
-              method: "delete" %>
+              <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
             </li>
-          <% else %>
+           <% else %>
             <li><%= link "Register", to: user_path(@conn, :new) %></li>
             <li><%= link "Log in", to: session_path(@conn, :new) %></li>
           <% end %>
-        </ol>
-        <h1>Welcome to BD8'rsd</h1>
+        </div>
       </div>
+    </nav>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-
-      <%= @inner %>
-
-    </div> <!-- /container -->
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-  </body>
+  
+    <main class="Site-content">
+    <%= @inner %>
+    </main>
+<!--
+    <footer>
+      <div class="col-xs-6">
+        LEFT SIDE
+      </div>
+      <div class="col-xs-6">
+        RIGHT SIDE
+      </div>
+    </footer>
+  </body>-->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../assets/js/vendor/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </html>
