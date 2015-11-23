@@ -104,41 +104,41 @@ h1 {
 
 .imagen1 {
   width: 98%;
-  height: 850px;
+  height: 700px;
   display: inline-block;
   margin-bottom: 1em;
   background-image: url("/images/debate.png");
-  background-size: 98% 850px;
+  background-size: 98% 700px;
   background-repeat: no-repeat;
 }
 
 .imagen0 {
   width: 98%;
-  height: 850px;
+  height: 700px;
   display: inline-block;
   margin-bottom: 1em;
   background-image: url("/images/imagen0.png");
-  background-size: 98% 850px;
+  background-size: 98% 700px;
   background-repeat: no-repeat;
 }
 
 .imagen2 {
   width: 98%;
-  height: 850px;
+  height: 700px;
   display: inline-block;
   margin-bottom: 1em;
   background-image: url("/images/imagen1.jpg");
-  background-size: 98% 850px;
+  background-size: 98% 700px;
   background-repeat: no-repeat;
 }
 
 .imagen3 {
   width: 98%;
-  height: 850px;
+  height: 700px;
   display: inline-block;
   margin-bottom: 1em;
   background-image: url("/images/imagen2.jpg");
-  background-size: 98% 850px;
+  background-size: 98% 700px;
   background-repeat: no-repeat;
 }
 
