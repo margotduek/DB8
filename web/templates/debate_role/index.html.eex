@@ -13,11 +13,6 @@
     <tr>
       <td><%= debate_role.role %></td>
 
-      <td class="text-right">
-        <%= link "Show", to: debate_role_path(@conn, :show, debate_role), class: "btn btn-default btn-xs" %>
-        <%= link "Edit", to: debate_role_path(@conn, :edit, debate_role), class: "btn btn-default btn-xs" %>
-        <%= link "Delete", to: debate_role_path(@conn, :delete, debate_role), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
-      </td>
     </tr>
 <% end %>
   </tbody>

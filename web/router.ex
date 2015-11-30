@@ -20,7 +20,7 @@ defmodule Db8.Router do
     get "/", PageController, :index
     resources "/users", UserController
     resources "/schools", SchoolController
-    resources "/debate_role", DebateRoleController
+    get "/debate_role", DebateRoleController, :index
     resources "/teams", TeamController
     resources "/tournaments", TournamentController
     resources "/tournament_judges", TournamentJudgeController
