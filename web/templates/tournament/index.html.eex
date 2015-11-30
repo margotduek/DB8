@@ -34,5 +34,5 @@
 
 
 <div class="centerbutton">
-  <button type="button" name="button" id="debateButton"><a href="<%= debate_path @conn, :index %>">Ver debates</a></button>
+  <button type="button" name="button" id="debateButton"><a href="<%= debate_path @conn, :index %>">Debates</a></button>
 </div>
