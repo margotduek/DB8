@@ -11,6 +11,11 @@
   <% end %>
 
   <div class="form-group">
+    <%= label f, :tournamentid, "Tournamentid", class: "control-label" %>
+    <%= number_input f, :tournamentid, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
     <%= label f, :propteam, "Propteam", class: "control-label" %>
     <%= number_input f, :propteam, class: "form-control" %>
   </div>
@@ -21,18 +26,8 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :propscore, "Propscore", class: "control-label" %>
-    <%= number_input f, :propscore, class: "form-control" %>
-  </div>
-
-  <div class="form-group">
-    <%= label f, :oppscore, "Oppscore", class: "control-label" %>
-    <%= number_input f, :oppscore, class: "form-control" %>
-  </div>
-
-  <div class="form-group">
-    <%= label f, :tournamentid, "Tournamentid", class: "control-label" %>
-    <%= number_input f, :tournamentid, class: "form-control" %>
+    <%= label f, :motion, "Motion", class: "control-label" %>
+    <%= text_input f, :motion, class: "form-control" %>
   </div>
 
   <div class="form-group">

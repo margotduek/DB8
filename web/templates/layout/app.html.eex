@@ -37,7 +37,7 @@
             </li>
            <% else %>
             <li><%= link "Register", to: user_path(@conn, :new) %></li>
-            <li><%= link "Log in", to: session_path(@conn, :new) %></li>
+            <li><%= link "Tournaments", to: tournament_path(@conn, :index) %></li>
           <% end %>
         </div>
       </div>
@@ -337,7 +337,7 @@ var chart = AmCharts.makeChart("chartdiv", {
       "value": 69
   }, {
       "date": "2015-09-30",
-      "value": 71
+      "value": 55
   }, {
       "date": "2015-10-01",
       "value": 67
@@ -445,7 +445,7 @@ var chart = AmCharts.makeChart("chartdiv", {
       "value": 65
   }, {
       "date": "2015-11-05",
-      "value": 71
+      "value": 55
   }, {
       "date": "2015-11-06",
       "value": 75
@@ -454,7 +454,7 @@ var chart = AmCharts.makeChart("chartdiv", {
       "value": 74
   }, {
       "date": "2015-11-08",
-      "value": 71
+      "value": 55
   }, {
       "date": "2015-11-09",
       "value": 76
@@ -466,13 +466,13 @@ var chart = AmCharts.makeChart("chartdiv", {
       "value": 81
   }, {
       "date": "2015-11-12",
-      "value": 83
+      "value": 50
   }, {
       "date": "2015-11-13",
-      "value": 80
+      "value": 55
   }, {
       "date": "2015-11-14",
-      "value": 70
+      "value": 59
   }, {
       "date": "2015-11-15",
       "value": 60

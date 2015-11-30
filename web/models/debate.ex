@@ -7,10 +7,11 @@ defmodule Db8.Debate do
     field :propscore, :integer
     field :oppscore, :integer
     field :tournamentid, :integer
+    field :motion, :string
 
   end
 
-  @required_fields ~w(propteam oppteam propscore oppscore tournamentid)
+  @required_fields ~w(tournamentid propteam oppteam motion)
   @optional_fields ~w()
 
   @doc """
