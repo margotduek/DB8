@@ -31,8 +31,3 @@
 
 <%= link "New tournament", to: tournament_path(@conn, :new) %>
 </div>
-
-
-<div class="centerbutton">
-  <button type="button" name="button" id="debateButton"><a href="<%= debate_path @conn, :index %>">Debates</a></button>
-</div>

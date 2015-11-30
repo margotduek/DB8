@@ -19,12 +19,17 @@
 
 </ul>
 
-
-
 <div class="centerbutton">
-  <button type="button" name="button" id="debateButton"><a href="<%= tournament_team_path @conn, :new %>">Add a team to a debate</a></button>
+  <button type="button" name="button" id="debateButton">
+    <a href="<%= tournament_team_path @conn, :new %>">Add team</a>
+  </button>
 </div>
 
+<div class="centerbutton">
+  <button type="button" name="button" id="debateButton">
+    <a href="<%= debate_path @conn, :index %>">New debate</a>
+  </button>
+</div>
 
 <%= link "Edit", to: tournament_path(@conn, :edit, @tournament) %>
 <%= link "Back", to: tournament_path(@conn, :index) %>
